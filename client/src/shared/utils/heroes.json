@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Герой 1",
+        "image": "https://via.placeholder.com/100",
+        "description": "Описание героя 1, его способности и особенности.",
+        "clickBoost": 0,
+        "timeBoost": 1,
+        "cost": 300
+    },
+    {
+        "name": "Герой 2",
+        "image": "https://via.placeholder.com/100",
+        "description": "Описание героя 2, его способности и особенности.",
+        "clickBoost": 1,
+        "timeBoost": 1,
+        "cost": 2000
+    },
+    {
+        "name": "Герой 3",
+        "image": "https://via.placeholder.com/100",
+        "description": "Описание героя 3, его способности и особенности.",
+        "clickBoost": 1,
+        "timeBoost": 0,
+        "cost": 3000
+    }
+]

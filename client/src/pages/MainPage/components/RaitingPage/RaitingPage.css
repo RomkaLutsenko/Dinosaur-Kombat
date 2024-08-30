@@ -1,0 +1,50 @@
+.rating-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%; /* Устанавливаем ширину родительского div */
+	padding: 0 20px;
+	max-width: 450px; /* Ограничиваем максимальную ширину */
+}
+
+.rating {
+	margin-top: 10px;
+}
+
+.table-header {
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 10px 30px;
+}
+
+.user-list {
+	width: 100%; /* Устанавливаем ширину списка, чтобы карточки не выходили за пределы */
+	padding-bottom: 30px;
+	height: 480px;
+	overflow-y: auto;
+}
+
+.user-card {
+	width: 95%; /* Карточка занимает всю доступную ширину родителя */
+	padding: 10px;
+	margin-bottom: 10px;
+	background: #85827d;
+	border-radius: 4px;
+}
+
+.user-card.current-user {
+	background: #f3ba2f;
+}
+
+.user-info-row {
+	display: flex; /* Включаем Flexbox для горизонтального расположения */
+	align-items: center; /* Выравниваем элементы по вертикали */
+	width: 100%; /* Ширина строки устанавливается равной родителю */
+}
+
+.user-info-row p {
+	flex: 1; /* Каждый <p> элемент занимает равное пространство */
+	text-align: center; /* Центрируем текст внутри каждого <p> */
+}
