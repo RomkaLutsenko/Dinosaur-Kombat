@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react'
 import HeroModal, { Hero } from '../../../features/HeroModal/HeroModal'
+import data from '../../../shared/utils/heroes.json'
 import HeroGrid from '../../../widgets/BoostsGrid'
 
 interface BoostsPageProps {
@@ -12,7 +13,9 @@ interface BoostsPageProps {
 const BoostsPage: React.FC<BoostsPageProps> = ({ updateBoost }) => {
 	const [visible, setVisible] = useState<boolean>(false)
 	const [hero, setHero] = useState<Hero | null>(null)
-	const [heroes, setHeroes] = useState<Hero[]>(/*heroesData*/ []) // Предполагается, что heroesData уже определено
+	const [heroes, setHeroes] = useState<Hero[]>(data) // Предполагается, что heroesData уже определено
+
+	console.log(heroes)
 
 	const showHero = (selectedHero: Hero) => {
 		setHero(selectedHero)
